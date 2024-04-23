@@ -24,7 +24,7 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
-// [Get]/api/date
+// [Get]/api/:date
 app.get("/api/:date?", function (req, res) {
   let reqDate = req.params.date
   let check = Number(reqDate)
